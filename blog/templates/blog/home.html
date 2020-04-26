@@ -1,0 +1,179 @@
+{% extends 'blog/base.html' %}
+{% block text %}
+    {% load static %}
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.5">
+        <title>Album example · Bootstrap</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+
+        <!-- Bootstrap core CSS -->
+        <link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+
+
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+        </style>
+        <!-- Custom styles for this template -->
+        <link href="album.css" rel="stylesheet">
+    </head>
+    <body>
+{% for x in var_1 %}
+
+{{ x.summary }}
+ {% endfor %}
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">WelCome To BLog Site</h1>
+                <p class="lead text-muted">“That which does not kill us, makes us stronger.”Friedrich Nietzsche.</p>
+                <p>
+                    <a href="{% url 'contacts' %}" class="btn btn-primary my-2">Contact me</a>
+
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Here start My Introduction -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h4 class="display-4">PARAG KHODKE</h4>
+            <p >
+                Experienced software engineer with a demonstrated history of working in the information technology and services Industry. Skilled in HTML5, CSS3, Javascript, jQuery, Bootstrap 3 and 4, Document Object Model, Python, Django (Basics,Templates, Forms, Admin Customization, ORM,Class Based Views),C/C++, Java, SQL, mangoDB, Advance database. Strong engineering professional With a B.Tech Major in computer science graduated from Vishwakarma institute of technology, Pune India.
+                .
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Here start My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Travel Blog <span
+                        class="text-muted"></span></h2>
+                <p class="lead">Each year in late fall, sea turtles become cold-stunned from dropping water temperatures and they strand on bayside beaches. Staff and volunteers from Wellfleet Bay canvass beaches after high tides in search of stranded turtles. Penn State students will be assigned a beach with naturalist and stranding coordinator Dennis Murley. Students will assist with processing found turtles, which includes weighing, measuring, and preparing for transport to New England Aquarium</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="{% static 'blog/images/t.jpg' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Here ends My Portfolio Pojects -->
+    <!-- Here start My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Political  <span class="text-muted"></span>
+                </h2>
+                <p class="lead">President Trump and public health officials said on Thursday that higher temperatures and humidity as well as direct exposure to sunlight quickly kills the coronavirus, leading to hopes that the threat of the contagion could drastically recede during the summer months.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="img-fluid" src="{% static 'blog/images/pol.jpg' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Here ends My Portfolio Pojects -->
+    <div class="container">
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Nature <span class="text-muted"></span></h2>
+                <p class="lead">While sitting on the back deck last evening, I observed the first chimney swifts of the season, zooming above our Columbia, Missouri, home.  Having wintered in South America, they have finally arrived on their breeding grounds where they will roost and nest in chimneys, tree cavities and other hollow structures.
+
+Found across the eastern 2/3 of the U.S. and southern Canada, these "flying cigars" are often observed in scattered flocks over cities and towns, feasting on flying insects; come dusk, they funnel into favored roost sites and are often mistaken for bats.  On hot, humid summer days, they are one of the few species that seem undaunted by the afternoon steam bath.
+
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="img-fluid" src="{% static 'blog/images/n.jpg' %}" width="500" height="500" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- /END THE FEATURETTES -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="{% url 'home' %}">Back to top</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock text %}

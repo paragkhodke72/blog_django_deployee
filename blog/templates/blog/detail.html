@@ -1,0 +1,57 @@
+{% extends 'blog/base.html' %}
+
+
+{% block text %}
+
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Well Come To My Blog</h1>
+                <p class="lead text-muted">'Imagination is more powerful than Knowledge. Einstien '.</p>
+                <p>
+                    <a href="{% url 'contacts' %}" class="btn btn-primary my-2">Contact me</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <div class="container">
+        <h3>{{ detail_blog.title }}</h3>
+        <body>{{ detail_blog.body }}</body>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="{% url 'home' %}">Back to top</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    </body>
+    </html>
+{% endblock text %}
