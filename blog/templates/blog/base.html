@@ -16,8 +16,8 @@
 <body>
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{% url 'home' %}">HOME
- <!--            <img src="{% static 'blog/images/p.png' %}" width="150" height="80" alt=""> -->
+        <a class="navbar-brand" href="{% url 'home' %}">
+            <img src="{% static 'blog/images/p.png' %}" width="150" height="80" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +36,18 @@
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <li class="nav-item active">Facebook
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.facebook.com/parag.khodke.35">
                         <img src="{% static 'blog/images/f.png' %}" width="32" height="32" alt="">
                     </a>
                 </li>
-                <li class="nav-item">LinkedIn</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/parag-khodke-66229979/"> <img src="{% static 'blog/images/l.png' %}" width="32" height="32" alt="">
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://twitter.com/home">Twitter
+                    <a class="nav-link" href="https://twitter.com/home">
+                        <img src="{% static 'blog/images/t.png' %}" width="32" height="32" alt="">
                     </a>
                 </li>
             </ul>
